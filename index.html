@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0;url=https://www.playtime.ph">
     <link rel="manifest" href="manifest.json">
   </head>
   <body>
@@ -10,6 +9,9 @@
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('sw.js');
       }
+
+      // Force redirect using JavaScript instead of meta
+      window.location.replace("https://www.playtime.ph");
     </script>
   </body>
 </html>
