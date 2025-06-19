@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Playtime</title>
+    <link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+    <iframe src="https://www.playtime.ph" style="width:100vw;height:100vh;border:none;"></iframe>
+    
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      }
+    </script>
+  </body>
+</html>
